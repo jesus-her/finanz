@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "TheInvestmentApp",
+    "slug": "investment",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/finanz_icon.png",
+    "splash": {
+      "image": "./assets/images/finanz_splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "userInterfaceStyle": "automatic",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.adaptive.investment",
+      "versionCode": 1,
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "turboModules": true
+    },
+    "plugins": [
+      [
+        "expo-facebook",
+        {
+          "userTrackingPermission": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ]
+  }
+}
